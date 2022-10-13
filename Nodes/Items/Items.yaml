@@ -41,3 +41,144 @@ Children:
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"Button1"}
+- Name: LED1
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LED1
+    Id: g=028e88f705a1a2e6e9ac9266884084f1
+    Supertype: Led
+    ReferenceType: HasComponent
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+- Name: CheckBox1
+  Type: ObjectLibraryItem
+  Children:
+  - Name: CheckBox1
+    Id: g=4f7c393b6492903a5d406392a51c0e47
+    Supertype: CheckBox
+    ReferenceType: HasComponent
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"CheckBox1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 119.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 234.0
+- Name: CompactServo1
+  Type: ObjectLibraryItem
+  Children:
+  - Name: CompactServo1
+    Id: g=60b11daa17c66501d323a876b3c823b2
+    Supertype: ScaleLayout
+    ReferenceType: HasComponent
+    Children:
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#4d4d4d"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 193.0240020751953
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 144.27099609375
+    - Name: Compact_x5F_Servo_x5F_Outline
+      Type: Image
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 193.0240020751953
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 144.27099609375
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=4;%PROJECTDIR%/res/Compact_x5F_Servo_x5F_Outline.svg"
+    - Name: Fill
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=4;%PROJECTDIR%/res/CompactServo_Fill.svg"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 193.0240020751953
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 144.27099609375
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#4d4d4d"
+        Children:
+        - Name: DynamicLink
+          Type: DataBind
+          DataType: NodePath
+          Value: "../../FillColor"
+    - Name: Compact_x5F_Servo_x5F_Overlay
+      Type: Image
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 193.0240020751953
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 144.27099609375
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=4;%PROJECTDIR%/res/Compact_x5F_Servo_x5F_Overlay.svg"
+    - Name: OriginalWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 193.0240020751953
+    - Name: OriginalHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 144.27099609375
