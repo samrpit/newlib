@@ -28,3 +28,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 302.0
+- Name: Button1
+  Type: ObjectLibraryItem
+  Children:
+  - Name: Button1
+    Id: g=e83d642bbcaf8807a308d557dd701399
+    Supertype: Button
+    ReferenceType: HasComponent
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
